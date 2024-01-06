@@ -101,7 +101,7 @@ export const Dashboard = () => {
                           <td className="px-6 py-4 text-start whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">{val.updatedAt.slice(0, 19).replace("T", " ")}<br/>{val.createdAt.slice(0, 19).replace("T", " ")}</td>
                           <td className="px-6 py-4 text-start whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">{val.name}</td>
                           <td className="px-4 py-4 text-start whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">
-                            <p className={`${val.shape === "rectangle" ? "h-10 w-10" :
+                            <p className={`${val.shape === "square" ? "h-10 w-10" :
                               val.shape === "circle" ? "h-10 w-10 rounded-full" :
                                 val.shape === "triangle" ? "w-0 h-0 border-[25px] border-y-[40px] border-transparent border-t-0 " : ""}`}
                               style={{ backgroundColor: val?.shape === "triangle" ? "transparent" : !val?.color ? "black" : val?.color, borderBottomColor: val.shape === "triangle" ? val?.color : "" }}

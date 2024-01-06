@@ -88,7 +88,7 @@ export const UpdatePopUp = ({ updateFormData, setUpdateFormData, setUpdatePopupO
                             className="mt-1 p-2 block w-full border rounded-md"
                         >
                             <option value="circle">Circle</option>
-                            <option value="rectangle">Rectangle</option>
+                            <option value="square">Square</option>
                             <option value="triangle">Triangle</option>
                         </select>
                     </div>
