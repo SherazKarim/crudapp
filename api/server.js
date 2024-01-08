@@ -20,7 +20,11 @@ const connect = async()=>{
 app.use(express.json())
 app.use(cookieParser())
 // app.use(cors({origin:"https://crudapp-vtpt-client.vercel.app/",credentials:true}))
-app.use(cors("*"))
+const corsOptions = {
+    origin: "*",
+    optionsSuccessStatus: 200,
+  };
+  app.use(cors(corsOptions));
 
 app.use('/api/auth',authRoute)
 app.use('/api/user',newUser)
